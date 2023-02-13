@@ -1,6 +1,6 @@
 import { Animated, StyleSheet, Dimensions } from 'react-native';
 import React, { useRef, useEffect } from 'react';
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/logo.svg'
 
 const { width, height } = Dimensions.get('window');
 
@@ -12,7 +12,7 @@ const FadeInView = (props) => {
       fadeAnim,
       {
         toValue: 1,
-        duration: 10000,
+        duration: 2000,
         useNativeDriver: true
       }
     ).start();

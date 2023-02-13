@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { View, Image, Pressable, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-function Language({onSelect}) {
+ export default function Language({onSelect}) {
 
     const [selectButton, setSelectedButton] = useState('am')
 
@@ -18,7 +18,7 @@ function Language({onSelect}) {
                     onSelect('en')
                 }}>
                 <Image source={require('../../assets/language/en.png')}></Image>
-
+                
             </TouchableOpacity>
             <TouchableOpacity
                 style={[styles.languagebtn, styles.middleIcon, selectButton === 'am' ? styles.selected : null]}
@@ -44,7 +44,7 @@ function Language({onSelect}) {
     )
 }
 
-export default Language;
+// export default Language;
 
 const styles = StyleSheet.create({
     languagecontainer: {
